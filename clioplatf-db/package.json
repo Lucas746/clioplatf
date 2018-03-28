@@ -1,0 +1,39 @@
+{
+  "name": "clioplatf-db",
+  "version": "1.0.0",
+  "private": true,
+  "description": "IoT Platform - DB Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "DEBUG=clioplatf:* nyc --reporter=lcov ava tests/ --verbose",
+    "setup": "DEBUG=clioplatf:* node setup.js",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas746/clioplatf.git"
+  },
+  "author": "https://twitter.com/lucasmartinhick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lucas746/clioplatf/issues"
+  },
+  "homepage": "https://github.com/Lucas746/clioplatf#readme",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "nyc": "^11.6.0",
+    "proxyquire": "^2.0.1",
+    "sinon": "^4.4.6",
+    "sqlite3": "^4.0.0",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "debug": "^3.1.0",
+    "defaults": "^1.0.3",
+    "inquirer": "^5.1.0",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.37.1"
+  }
+}
